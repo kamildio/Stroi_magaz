@@ -5,7 +5,11 @@
     background-position: center;
     display: flex;
 }
-
+.bg-dark {
+  --bs-dark-rgb: 50, 50, 50; /* Новый цвет */
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
 .bot-main-fst {
     left: 125px;
     top: 250px;
@@ -21,6 +25,7 @@
     align-items: center;
 
 }
+
 
 .limiter {
     max-height: 90px;
