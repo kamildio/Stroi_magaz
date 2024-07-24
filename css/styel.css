@@ -1,103 +1,103 @@
 .main {
-    background: url(../img/3f28ece93e05d99dc5a7a59fa609ef65.jpeg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
+  background: url(../img/3f28ece93e05d99dc5a7a59fa609ef65.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 .bg-dark {
-  --bs-dark-rgb: 50, 50, 50; /* Новый цвет */
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+--bs-dark-rgb: 50, 50, 50; /* Новый цвет */
+--bs-bg-opacity: 1;
+background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 .bot-main-fst {
-    left: 125px;
-    top: 250px;
-    color: #000;
-    background: #E40716;
-    position: absolute;
-    border-radius: 10px;
-    width: 725px;
-    padding: 5px;
-    background-size: cover;
-    background-attachment: fixed;
-    display: block;
-    align-items: center;
+  left: 125px;
+  top: 250px;
+  color: #000;
+  background: #E40716;
+  position: absolute;
+  border-radius: 10px;
+  width: 725px;
+  padding: 5px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  align-items: center;
 
 }
 
 
 .limiter {
-    max-height: 90px;
-    overflow: hidden;
-    position: relative;
+  max-height: 90px;
+  overflow: hidden;
+  position: relative;
 }
-  .limiter .bottom {
-    position: absolute; /* Если прыгает - можно попробовать sticky */
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    opacity: 1;
-    transition: 0.3s;
+.limiter .bottom {
+  position: absolute; /* Если прыгает - можно попробовать sticky */
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  transition: 0.3s;
 }
-  .read-more-checker {
-    opacity: 0;
-    position: absolute;
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
 }
-  .read-more-checker:checked ~ .limiter {
-    max-height: none;
+.read-more-checker:checked ~ .limiter {
+  max-height: none;
 }
-  .read-more-checker:checked ~ .limiter .bottom {
-    opacity: 0;
-    transition: 0.3s;
+.read-more-checker:checked ~ .limiter .bottom {
+  opacity: 0;
+  transition: 0.3s;
 }
-  .read-more-checker ~ .read-more-button:before {
-    content: "Развернуть »";
+.read-more-checker ~ .read-more-button:before {
+  content: "Развернуть »";
 }
-  .read-more-checker:checked ~ .read-more-button:before {
-    content: "Свернуть «";
+.read-more-checker:checked ~ .read-more-button:before {
+  content: "Свернуть «";
 }
-  .read-more-button {
-    cursor: pointer;
-    display: inline-block;
-    color: #ff0000;
-    text-decoration: underline;
+.read-more-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #ff0000;
+  text-decoration: underline;
 }
 
 .model {
-    position: absolute;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    text-overflow: ellipsis;
-    margin: 0 auto;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-overflow: ellipsis;
+  margin: 0 auto;
 }
 
 .jp h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  max-width: 943px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 35px;
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 0px;
+margin-top: 20px;
+max-width: 943px;
+margin-left: auto;
+margin-right: auto;
+line-height: 35px;
 }
 
 .jp p {
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 18px;
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
+font-size: 14px;
+text-transform: uppercase;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 18px;
+max-width: 880px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .carousel-item-active img {
-  max-height: none;
-  max-width: none;
+max-height: none;
+max-width: none;
 }
